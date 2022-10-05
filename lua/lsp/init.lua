@@ -98,3 +98,14 @@ lspconfig.cmake.setup {
   flags = lsp_flags,
   capabilities = capabilities
 }
+lspconfig.pylsp.setup {
+  settings = {
+    pylsp = {
+      plugins = {
+        pycodestyle = {
+          maxLineLength = 120
+        }
+      }
+    }
+  }
+}
