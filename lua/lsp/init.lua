@@ -103,7 +103,11 @@ lspconfig.pylsp.setup {
     pylsp = {
       plugins = {
         pycodestyle = {
-          maxLineLength = 120
+          maxLineLength = 120,
+        },
+        jedi_completion = {
+			enabled = true,
+			fuzzy = true,
         }
       }
     }
