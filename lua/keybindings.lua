@@ -5,7 +5,7 @@ local map = vim.api.nvim_set_keymap
 local opt = {noremap = true, silent = true }
 
 -- nvimTree
-map('n', '<F3>', ':NvimTreeToggle<CR>', opt)
+map('n', '<F2>', ':NvimTreeToggle<CR>', opt)
 map('n', '<C-h>', ':BufferLineCyclePrev<CR>', opt)
 map('n', '<C-l>', ':BufferLineCycleNext<CR>', opt)
 map('n', '<A-h>', ':TSBufToggle highlight<CR>', opt)
@@ -17,5 +17,5 @@ map('n', '<leader>fb', ':Telescope buffers<cr>', opt)
 map('n', '<leader>fh', ':Telescope help_tags<cr>', opt)
 map('n', '<leader>9', '<c-w><', opt)
 map('n', '<leader>0', '<c-w>>', opt)
-map('n', '<F2>', ':SymbolsOutline<cr>', opt)
+map('n', '<F3>', ':SymbolsOutline<cr>', opt)
 -- map('n', '<F4>', ':ToggleTerm<cr>', opt)
